@@ -1,0 +1,14 @@
+def main():
+    # Step 1: Take the count from the user
+    count = int(input("Enter how many Fibonacci numbers you want: "))
+
+    # Step 2: Initialize the first two Fibonacci numbers
+    a, b = 0, 1
+
+    # Step 3: Start a loop to generate and print the Fibonacci numbers
+    for _ in range(count):
+        print(a)  # Print the current Fibonacci number
+        a, b = b, a + b  # Update the values for the next Fibonacci numbers
+
+# Call the main function to execute the program
+main()
